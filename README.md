@@ -96,7 +96,7 @@ pip install -r requirements.txt
 
 There are two projects in this repo:
 
-- [Lambda DynamoDB Example](#Lambda-DynamoDB-Example)
+- [Lambda DynamoDB Example](#Lambda---DynamoDB-Example)
 - [ECS Pipeline Deployment](#ECS-Pipeline-Deployment)
 
 ## Lambda - DynamoDB Example
