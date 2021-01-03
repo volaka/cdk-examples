@@ -1,0 +1,22 @@
+{
+  "app": "python3 app.py",
+  "context": {
+    "@aws-cdk/core:enableStackNameDuplicates": "true",
+    "aws-cdk:enableDiffNoFail": "true",
+    "@aws-cdk/core:stackRelativeExports": "true",
+    "@aws-cdk/aws-ecr-assets:dockerIgnoreSupport": true,
+    "@aws-cdk/aws-secretsmanager:parseOwnedSecretName": true,
+    "@aws-cdk/aws-kms:defaultKeyPolicies": true,
+    "dynamodb": {
+      "TABLE_NAME": "s3csv",
+      "PARTITION_KEY_NAME": "guid"
+    },
+    "application": {
+      "image-name": "factorial-calculator",
+      "image-tag": "latest",
+      "branch": "master"
+    },
+    "namespace": "cdk-workshop"
+  },
+  "versionReporting": false
+}
